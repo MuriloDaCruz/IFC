@@ -64,7 +64,7 @@ function addProduct() {
     </thead>
     <tbody>
       <tr v-for="product in productStore.products" :key="product.id">
-        <td> {{ product.id }}</td>
+        <td> {{ product.id }} - </td>
         <td> {{ product.name }}</td>
         <td> {{ product.price }}</td>
         <td> {{ product.qty }}</td>

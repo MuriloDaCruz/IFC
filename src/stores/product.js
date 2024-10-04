@@ -21,9 +21,7 @@ export const useProductStore = defineStore('Product', () => {
     }
   }
 
-  // Função para adicionar produto
   function addProduct(newProduct) {
-    // Encontrar o próximo ID disponível
     const nextId = products.value.length > 0 ? Math.max(...products.value.map(p => p.id)) + 1 : 1;
     products.value.push({ ...newProduct, id: nextId })
   }
